@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+<head>
+	<meta charset = "UTF-8">
+	<title>Assignment #2</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div>
+		<div class="input-container">
+			<label>Curve Type:</label>
+			<select id="curveType" >
+				<option value="0">Hermite</option>
+				<option value="1">Cardinal</option>
+				<option value="2">Bezier</option>
+				<option value="3">Bezier Matrix</option>
+				<option value="4">All</option>
+			</select>
+		<label># of Segments</label>
+		<input id="segCount" type="number" path="note" max="50" min="0">
+		<label >Cardinal Tension:</label>
+		<input id="tension" type="number" step=".25">
+		</div>
+		<div class="checkbox-container">
+			<div>
+				<label>Show Points:</label>
+				<input id="showPoints" type="checkbox">
+			</div>
+			<div>
+				<label>Show Line:</label>
+				<input id="showLine" type="checkbox">
+			</div>
+			<div>
+				<label>Show Control:</label>
+				<input id="showControl" type="checkbox">
+			</div>
+			<div>
+				<label>Move:</label>
+				<input id="move" type="checkbox">
+			</div>
+		</div>
+	</div>
+	<canvas id = "canvas-main" width = "1000" height = "1000" style = "width: 100%; height: auto;"></canvas>
+	<script>
+		var MySample = {};
+	</script>
+	<script src = "scripts/graphics.js"></script>
+	<script src = "scripts/driver.js"></script>
+</body>
+</html>

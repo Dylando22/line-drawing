@@ -1,0 +1,13 @@
+.checkbox-container{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    padding: 5px;
+    margin: auto;
+}
+
+.input-container{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
